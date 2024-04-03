@@ -1,0 +1,44 @@
+@use '../util/' as *;
+@use '../globals/' as *;
+
+.header {
+    background-color: $blue;
+    position: relative;
+    color: $white;
+    &__logo {
+        height: 6rem;
+        margin: 0;
+        line-height: 6rem;
+        font-size: 2.3rem;
+        font-weight: 700;
+        @include breakpoint(tablet) {
+            font-size: 2.5rem;
+        }
+    }
+    &__banner {
+    background-image: linear-gradient(to right, rgb(0 0 0 /.5), rgb(0 0 0 /.5)), url(../../../build/img/gallery.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25rem;
+    position: relative;
+    @include breakpoint(tablet) {
+        height: 35rem;
+    }
+    
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        
+    }
+    &__title {
+        color: white;
+        font-size: 5rem;
+    }
+}

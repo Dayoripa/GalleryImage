@@ -1,0 +1,15 @@
+@use '../util/' as *;
+@use '../globals' as *;
+
+.footer {
+    margin: 0;
+    .copyright {
+        background-color: $blue;
+        color: $white;
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        padding: 2rem 0;
+        margin: 0;
+    }
+}

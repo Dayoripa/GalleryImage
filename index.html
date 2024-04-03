@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="build/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <section class="header__menu container">
+
+            <p class="header__logo">
+                Dayoripa
+            </p>
+            
+            <div class="nav">
+                <span class="nav__icon nav__icon--open" id="btn-open"><i class="fa-solid fa-bars"></i></span>
+                <span class="nav__icon nav__icon--close" id="btn-close"><i class="fa-solid fa-x"></i></span>
+                <ul class="nav__menu"> 
+                    <li class="nav__list">
+                        <a class="nav__link" href="#">All</a>
+                    </li>
+                    <li class="nav__list">
+                        <a class="nav__link" href="#">Branding</a>
+                    </li>
+                    <li class="nav__list">
+                        <a class="nav__link" href="#">web</a>
+                    </li>
+                    <li class="nav__list">
+                        <a class="nav__link" href="#">photography</a>
+                    </li>
+                    <li class="nav__list">
+                        <a class="nav__link" href="#">app</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="header__banner">
+            <h1 class="header__title">Gallery</h1>
+        </section>
+    </header>
+
+    <section class="search">
+        <form class="form container">
+            <label for="name">
+                image search
+            </label>
+            <input type="text" name="name" id="name">
+        </form>
+        <div class="search__btn container">
+            <button class="btn">All</button>
+            <button class="btn">Branding</button>
+            <button class="btn">Web</button>
+            <button class="btn">photography</button>
+            <button class="btn">app</button>
+        </div>
+    </section>
+
+    <main class="gallery">
+        <section class="gallery__container container">
+            <div class="card">
+                <img class="card__image" src="build/img/gallery.jpg" alt="image">
+            </div>
+            <div class="card">
+                <img class="card__image" src="build/img/gallery2.jpg" alt="image">
+            </div>
+            <div class="card">
+                <img class="card__image" src="build/img/gallery.jpg" alt="image">
+            </div>
+            <div class="card">
+                <img class="card__image" src="build/img/gallery2.jpg" alt="image">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="copyright">Dayoripa - All rights reserved</p>
+    </footer>
+
+    <script src="./src/js/nav.js"></script>
+</body>
+
+</html>

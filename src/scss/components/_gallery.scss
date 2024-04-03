@@ -1,0 +1,38 @@
+@use '../util/' as *;
+@use '../globals' as *;
+
+.gallery {
+    padding: 5rem 0;
+
+    &__container {
+        display: grid;
+        justify-items: center;
+        gap: 1rem;
+        justify-content: center;
+        @include breakpoint(tablet) {
+            grid-template-columns: repeat(2, 28rem);
+        }
+        @include breakpoint(large) {
+            grid-template-columns: repeat(3, 28rem);
+        }
+        @include breakpoint(xlarge) {
+            grid-template-columns: repeat(4, 28rem);
+        }
+        .card {
+            background-color: $bgImage;
+            border-radius: .5rem;
+            overflow: hidden;
+            height: 33rem;
+            width: 25rem;
+            &__image {
+                height: 100%;
+            }
+            @include breakpoint(phone) {
+                height: 40rem;
+                width: 28rem;
+            }
+        }
+        
+
+    }
+}
